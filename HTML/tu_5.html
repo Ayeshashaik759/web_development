@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+   <h2>this is HTML form tutorial</h2>
+   <form action="backend.php">
+       <label for="name">Name:</label>
+       <div> 
+         <input type="text" name="myName" id="name">
+       </div>
+       <br>
+       <label for="role">Role</label>
+       <div>
+         <input type="text" name="myRoll" id="role" >
+       </div>
+       <br>
+       <label for="email">Email</label>
+       <div>
+            <input type="email" name="myEmail" id="email">
+       </div>
+       <br>
+       <!-- we can either use div tag or br tag to bring name and role in different lines here div is mostly used-->
+      <!-- Name: <input type="text" >
+       <br> <br>
+       Role: <input type="text" >
+       <br><br> -->
+       <label for="date">Date</label>
+       <div>
+         <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+         <input type="number" name="myBonus"id="bonus">
+        </div>
+        <br>
+        <label for="r_u_eligble">Are you Eligible</label>
+        <div>
+            <input type="checkbox" name="myCheckbox" id="r_u_eligible" checked>
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <div>
+             male <input type="radio" name="myGender" id="gender"> female <input type="radio" name="myGender" id="gender"> 
+            not intrested to answer <input type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <label for="writeAboutYourSelf"> write about your self</label>
+        <div>
+         <br> <textarea name="myText"  cols="30" rows="10" id="writeAboutYourSelf"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label><br>
+            <select name="myCar" id="car">
+                <option value="ind">indica</option>
+                <option value="swt">swift</option>
+                <option value="tes" selected>tesla</option>
+                <option value="hun">hundai</option>
+            </select>
+          </div>
+          <br> 
+        <div>
+            <input type="submit"  value="submit now">
+            <br><br>
+            <input type="reset" value="reset now">
+        </div>
+   </form>
+
+</body>
+</html>

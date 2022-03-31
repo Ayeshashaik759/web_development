@@ -1,0 +1,9 @@
+/* in thisthe basic sntax is like selector{ property: value;} ex is p{color: blue}  */
+/* we have three ways to add css to markup
+ 1)inline css:css is addedto the elements directly using style attribute
+ 2)internal css:css is kept inside the head tags in <style> tags
+ 3)external css:css is kept externally inside a .css stylesheet */
+p{
+    color: aquamarine; 
+    background-color: hotpink !important;
+}
