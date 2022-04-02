@@ -6,32 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>local gym project</title>
     <link rel="stylesheet" href="local_gym.css">
+    <link rel="stylesheet" href="https//fonts.goole.ballu.com">
     <style>
         /* css reset styles */
         body{
             margin: 0px;
             padding: 0px;
-            background: url('img/bg.jpg');
+            /* background: url('img/bg.jpg'); */
+            font-family: 'ballu bahi' cursive;
+            background-color: rgb(232, 199, 252);
         }
         .left{
+            position: absolute;
+            top: 20px;
+            left: 99px;
             border: 2px solid gainsboro;
+            display: inline-block;
+            background-color: rgb(204, 91, 189);
+        }
+        .left.img{
+            width : 143px;
+            /* this invert function is used to convert black to white color and white to black color */
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height:24px ;
+            font-size: 26px;
         }
         .middle{
-
+            border: 2px solid rgb(233, 44, 27) ;
+            display:block;
+            width: 30%;
+            margin :20px auto;
+            border-radius: 10px;
+            background-color: rgb(235, 157, 188);
         }
         .right{
+            position: absolute;
+            top: 20px;
+            right: 99px;
+            border: 2px solid rgb(253, 253, 16);
+            display: inline-block;
+            background-color: rgb(167, 252, 223);
+        }
+        .navbar{
+            display:inline-block;
 
         }
+        .navbar li{
+            display:inline-block
+        }
+        .navbar li a{
+            color: rgb(182, 182, 236);
+            text-decoration: none;
+            padding: 12px 12px;
+            font-size: 15px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(174, 238, 177);
+        }
+        .btn{
+            font-family: 'ballu bahi' cursive;
+            margin:0px 9px;
+            color: rgb(177, 253, 253);
+            padding:4px 14px;
+            border: 2px solid rgb(145, 35, 35);
+            border-radius: 10px;
+            font-size:20px ;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            background-color: rgb(233, 179, 212);
+        }
+        .container{
+            border: 4px solid rgb(36, 37, 34);
+            margin:70px 70px ;
+            padding:60px 60px;
+            width:33%;
+            border-radius: 30px;
+            background-color: rgb(172, 247, 53);
+        }
+        .formgroup input{
+          text-align: center;
+          display:block;
+          border:2px solid rgb(47, 47, 107);
+          border-radius: 15px;
+          font-size: 20px;
+          font-family: 'ballu bhai' cursive ;
+          margin: 10px auto;
+        }
+        .container h1{
+            text-align: center;     
+        }
+        .container button{
+            color: black;
+            text-align: center;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+        
     </style>
 </head>
 <body>
     <header class="header">
         <!-- left box for logo -->
-        <div class="left">i'm left</div>
+        <div class="left"><img src="img/gym.png" alt="my_logo">
+        <div>fitness</div></div>
         <!-- mid class for navbar -->
-        <div class="middle">i'm middle</div>
+        <div class="middle">
+        <ul class="navbar">
+         <li><a href="#" class="active">Home</a></li>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Fitness Calculator</a></li>
+         <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
         <!-- right class for buttons -->
-        <div class="right">i'm right</div>
+        <div class="right">
+            <button class="btn">call us know</button>
+            <button class="btn">Email Us</button>
+        </div>
     </header>
+    <div class="container">
+        <h1>join the best gym in the world</h1>
+        <form action="noaction.js">
+            <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+            <input type="text" name="" placeholder=" Enter your age">
+            </div>
+            <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+            <input type="text" name="" placeholder=" Enter your locality">
+            </div>
+            <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+            <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your email">
+            </div>
+            <button class="btn">submit</button>
+
+        </form>
+    </div>
 </body>
 </html>
