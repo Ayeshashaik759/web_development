@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings and string methods in javascript</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, qui?</h1>
+    <div id="content"></div>
+    <script>
+      var string='this'; 
+    //   we can create a string like above or as below first one is used in cases to write like 'hello "how" are you' and second case in situation like "it's"
+      var str="mango";
+      var str2=' is a ';
+      console.log(string+str2+str);
+      var temp=`${string} ${str2} ${str} and thi's is ve"ry sweet`;
+      console.log(temp);
+      var len=string.length;
+      console.log(`the length of string is: ${len}`);
+      console.log("congratulations!\n happy to inf\\orm that \t wait is over \b your application is selected");
+      document.getElementById('content').innerHTML='<h3>this is a innner heading</h3>';
+    </script>
+</body>
+</html>

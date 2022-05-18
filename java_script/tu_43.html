@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions in javascript</title>
+</head>
+<body>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusantium ad, beatae corrupti consectetur eligendi deleniti totam quidem dolor molestiae.</h3>
+</body>
+<script>
+    var str="this is a string";
+    console.log(str);
+    var position = str.indexOf('is');
+    console.log(position);
+    position=str.lastIndexOf('is');
+    console.log(position);
+    var substr=str.slice(1,6);
+    console.log(substr);
+    var substr=str.substring(1,7);
+    console.log(substr);
+    var substr1=str.substr(1,5);
+    console.log(substr1);
+    var replaced=str.replace('string','apple');
+    console.log(str);
+    console.log(replaced);
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+    var newstring=str.concat(' new string');
+    console.log(newstring);
+    var str_with_white_spaces='     hello    eve    ry  one     '
+    console.log(str_with_white_spaces);
+    console.log(str_with_white_spaces.trim());
+    var char3=str.charAt(2);
+    console.log(char3);
+    var char2= str.charCodeAt(2);
+    console.log(char2);
+    console.log(str[5]);
+</script>
+</html>
