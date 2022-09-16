@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+    <h1>this is a heading</h1>
+    <script>
+        let myvar = 34;;
+        let myvar2 ="string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+        let employee ={
+            name : "abc",
+            salary : "45000",
+            age : 30,
+            position : "manager",
+            "position 2" : "project lead"
+        };
+        console.log(employee); 
+        // let names = [1,2,3,"abc",undefined];
+        let names =new Array(11,2,3,"abc",undefined);
+        console.log(names[1]);
+        console.log(names.length);
+        names = names.sort();
+        console.log(names);
+        names.push("hello");
+        console.log(names);
+        console.log(employee.name);
+        console.log(employee['age']);
+        console.log(employee['position 2']);
+        let arr = new Array(23);
+        // array of 23 undefined elements are formed 
+        console.log(arr);
+        arr.push("world");
+        console.log(arr);
+   </script>
+</body>
+</html>

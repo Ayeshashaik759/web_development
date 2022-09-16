@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js date object</title>
+    <style>
+        *{
+            background-color: bisque;
+        }
+        h1{ display: inline-block;
+            background-color: beige;
+            border: 3px solid rgb(168, 159, 159);
+            text-align: center;
+            margin: auto;
+            padding : 10px;
+            width: 70%;
+        }
+        .container,span{
+            background-color: beige;
+             text-align: center;
+        }
+        .container{
+            display: inline-block;
+            border: 3px solid rgb(155, 139, 139);
+            margin: auto;
+            padding : 10px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is a heading</h1>
+    <div class="container">
+        clock : <span id = "time"></span>
+    </div>
+    <script>
+        // let now = new Date();
+        // console.log(now);
+        // let ndt = new Date(0);
+        // let dt = new Date(1000);
+        // console.log(dt);
+        let newdate = new Date("2022-6-21");
+        console.log(newdate);
+        let yr = newdate.getFullYear();
+        console.log("year : ",yr);
+        let dat = newdate.getDate();
+        console.log("date : ",dat);
+        let mn = newdate.getMonth();
+        console.log("month : ",mn);
+        let hr = newdate.getHours();
+        console.log("hour : ",hr);
+        newdate.setDate(36);
+        console.log(newdate.getDate());
+        console.log(Date.now());
+        setInterval(update,1000);
+        function update(){
+            time.innerHTML= new Date();
+        }
+
+    </script>
+</body>
+</html>

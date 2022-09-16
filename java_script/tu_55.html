@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </div>
+    <script>
+        let m=Math;
+        // printing the Math object
+        console.log(m);
+        // printing the constants in Math object
+        console.log("the value of Math.E is: ",Math.E);
+        console.log("the value of Math.PI is: ",Math.PI);
+        console.log("the value of Math.LN2 is: ",Math.LN2);
+        console.log("the value of Math.SQRT1_2 is: ",Math.SQRT1_2);
+        console.log("the value of Math.LOG2E is: ",Math.LOG2E);
+        // printing the functions in Math object
+        let a = 3.14;
+        let b = 45.56;
+        console.log("the value of a, b is: ",a,b);
+        console.log("the rounded value of a, b is: ", Math.round(a), Math.round(b));
+        console.log("the vale of 2 raised to the power 5 is: ",Math.pow(2,5));
+        console.log("the square root of 36 is: ", Math.sqrt(36));
+        console.log("the ceil value of 5.8 is: ",Math.ceil(5.8));
+        console.log("the floor value of 5.8 is: ",Math.floor(5.8));
+        console.log("the absolute value of -5.8 is: ",Math.abs(-5.8));
+        // trignometric functions
+        console.log("the value of sin(pi) is ",Math.sin(Math.PI));
+        console.log("the value of cos(pi) is ",Math.cos(Math.PI));
+        console.log("the value of tan(pi) is ",Math.tan(Math.PI));
+        // min and max function
+        console.log("Minimum value of 4,5,6 is: ",Math.min(4,5,6));
+        console.log("Maximum value of 4,5,6 is: ",Math.max(4,5,6));
+        // generating a random number
+        let r = Math.random();
+        // it will generate a random number between 0 - 1
+        console.log("the random number is: ",r);
+        let minRange = 1;
+        let maxRange = 100;
+        // to generate a random number between 1 to 100 we can use 
+        let randomNum =minRange +((maxRange-minRange)*Math.random());
+        console.log('random number between 1 to 100 is: ',randomNum);
+    </script>
+</body>
+</html>

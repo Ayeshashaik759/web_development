@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+<body>
+    <h1>grab your cup of tea</h1>
+    <script>
+        // function greet(){
+        //     console.log("good morning");
+        // }
+        greet = () => console.log("good afternoon");
+        greet();
+        setTimeout(()=>{console.log("we are inside set time out")},10000);
+        //let sum = (a,b)=>{
+        //     return a+b;
+        // }
+        let sum = (a,b)=>a+b;
+        let half = a => a/2;
+        console.log(sum(40,50));
+        console.log(half(25));
+        let obj = {
+            names : ['ayesha','arshiya','hunaid','rafiya'],
+            wish :"manry more happy returns of the day",
+            wishing1(){
+                this.names.forEach(function s(student){
+                console.log(this.wish,student);
+            })},
+            wishing2(){
+                this.names.forEach(name => {
+                console.log(this.wish,name);
+            })}
+        }
+        obj.wishing1();
+        obj.wishing2();
+
+    </script>
+</body>
+</html>
